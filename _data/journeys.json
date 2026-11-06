@@ -1,0 +1,419 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-06T13:18:46.976Z",
+  "timezone": "Europe/Paris",
+  "source": "SNCF Connect route details",
+  "criterion": "Autonomous access for wheelchair users",
+  "rolling_stock_confirmed": false,
+  "status": "complete",
+  "coverage": [
+    {
+      "date": "2026-11-09",
+      "direction": "marseille-paris",
+      "complete": true,
+      "checked": 13
+    },
+    {
+      "date": "2026-11-09",
+      "direction": "paris-marseille",
+      "complete": true,
+      "checked": 14
+    },
+    {
+      "date": "2026-11-10",
+      "direction": "marseille-paris",
+      "complete": true,
+      "checked": 13
+    },
+    {
+      "date": "2026-11-10",
+      "direction": "paris-marseille",
+      "complete": true,
+      "checked": 14
+    },
+    {
+      "date": "2026-11-11",
+      "direction": "marseille-paris",
+      "complete": true,
+      "checked": 12
+    },
+    {
+      "date": "2026-11-11",
+      "direction": "paris-marseille",
+      "complete": true,
+      "checked": 15
+    },
+    {
+      "date": "2026-11-12",
+      "direction": "marseille-paris",
+      "complete": true,
+      "checked": 13
+    },
+    {
+      "date": "2026-11-12",
+      "direction": "paris-marseille",
+      "complete": true,
+      "checked": 15
+    },
+    {
+      "date": "2026-11-13",
+      "direction": "marseille-paris",
+      "complete": true,
+      "checked": 13
+    },
+    {
+      "date": "2026-11-13",
+      "direction": "paris-marseille",
+      "complete": true,
+      "checked": 18
+    },
+    {
+      "date": "2026-11-14",
+      "direction": "marseille-paris",
+      "complete": true,
+      "checked": 11
+    },
+    {
+      "date": "2026-11-14",
+      "direction": "paris-marseille",
+      "complete": true,
+      "checked": 11
+    },
+    {
+      "date": "2026-11-15",
+      "direction": "marseille-paris",
+      "complete": true,
+      "checked": 16
+    },
+    {
+      "date": "2026-11-15",
+      "direction": "paris-marseille",
+      "complete": true,
+      "checked": 16
+    }
+  ],
+  "journeys": [
+    {
+      "id": "2026-11-09_paris-marseille_6103_0738",
+      "date": "2026-11-09",
+      "direction": "paris-marseille",
+      "operator": "TGV INOUI",
+      "train_number": "6103",
+      "origin": "Paris Gare de Lyon",
+      "destination": "Marseille Saint-Charles",
+      "departure": "2026-11-09T07:38:00+01:00",
+      "arrival": "2026-11-09T10:57:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.849Z"
+    },
+    {
+      "id": "2026-11-09_marseille-paris_6116_1201",
+      "date": "2026-11-09",
+      "direction": "marseille-paris",
+      "operator": "TGV INOUI",
+      "train_number": "6116",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Paris Gare de Lyon",
+      "departure": "2026-11-09T12:01:00+01:00",
+      "arrival": "2026-11-09T15:22:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.850Z"
+    },
+    {
+      "id": "2026-11-09_paris-marseille_6181_1722",
+      "date": "2026-11-09",
+      "direction": "paris-marseille",
+      "operator": "TGV INOUI",
+      "train_number": "6181",
+      "origin": "Paris Gare de Lyon",
+      "destination": "Marseille Saint-Charles",
+      "departure": "2026-11-09T17:22:00+01:00",
+      "arrival": "2026-11-09T20:35:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.849Z"
+    },
+    {
+      "id": "2026-11-10_marseille-paris_6174_1246",
+      "date": "2026-11-10",
+      "direction": "marseille-paris",
+      "operator": "TGV INOUI",
+      "train_number": "6174",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Paris Gare de Lyon",
+      "departure": "2026-11-10T12:46:00+01:00",
+      "arrival": "2026-11-10T15:51:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T13:15:51.764Z"
+    },
+    {
+      "id": "2026-11-11_paris-marseille_6177_1410",
+      "date": "2026-11-11",
+      "direction": "paris-marseille",
+      "operator": "TGV INOUI",
+      "train_number": "6177",
+      "origin": "Paris Gare de Lyon",
+      "destination": "Marseille Saint-Charles",
+      "departure": "2026-11-11T14:10:00+01:00",
+      "arrival": "2026-11-11T17:14:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T13:10:58.505Z"
+    },
+    {
+      "id": "2026-11-12_marseille-paris_6112_0903",
+      "date": "2026-11-12",
+      "direction": "marseille-paris",
+      "operator": "TGV INOUI",
+      "train_number": "6112",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Paris Gare de Lyon",
+      "departure": "2026-11-12T09:03:00+01:00",
+      "arrival": "2026-11-12T12:22:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T13:13:32.300Z"
+    },
+    {
+      "id": "2026-11-12_paris-marseille_6115_1438",
+      "date": "2026-11-12",
+      "direction": "paris-marseille",
+      "operator": "TGV INOUI",
+      "train_number": "6115",
+      "origin": "Paris Gare de Lyon",
+      "destination": "Marseille Saint-Charles",
+      "departure": "2026-11-12T14:38:00+01:00",
+      "arrival": "2026-11-12T17:57:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T13:17:32.709Z"
+    },
+    {
+      "id": "2026-11-12_marseille-paris_6132_1912",
+      "date": "2026-11-12",
+      "direction": "marseille-paris",
+      "operator": "TGV INOUI",
+      "train_number": "6132",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Paris Gare de Lyon",
+      "departure": "2026-11-12T19:12:00+01:00",
+      "arrival": "2026-11-12T22:32:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T13:15:20.106Z"
+    },
+    {
+      "id": "2026-11-13_paris-marseille_6103_0738",
+      "date": "2026-11-13",
+      "direction": "paris-marseille",
+      "operator": "TGV INOUI",
+      "train_number": "6103",
+      "origin": "Paris Gare de Lyon",
+      "destination": "Marseille Saint-Charles",
+      "departure": "2026-11-13T07:38:00+01:00",
+      "arrival": "2026-11-13T10:57:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.850Z"
+    },
+    {
+      "id": "2026-11-13_marseille-paris_6116_1201",
+      "date": "2026-11-13",
+      "direction": "marseille-paris",
+      "operator": "TGV INOUI",
+      "train_number": "6116",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Paris Gare de Lyon",
+      "departure": "2026-11-13T12:01:00+01:00",
+      "arrival": "2026-11-13T15:22:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.850Z"
+    },
+    {
+      "id": "2026-11-13_paris-marseille_6153_1810",
+      "date": "2026-11-13",
+      "direction": "paris-marseille",
+      "operator": "TGV INOUI",
+      "train_number": "6153",
+      "origin": "Paris Gare de Lyon",
+      "destination": "Marseille Saint-Charles",
+      "departure": "2026-11-13T18:10:00+01:00",
+      "arrival": "2026-11-13T21:16:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.850Z"
+    },
+    {
+      "id": "2026-11-14_marseille-paris_6174_1246",
+      "date": "2026-11-14",
+      "direction": "marseille-paris",
+      "operator": "TGV INOUI",
+      "train_number": "6174",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Paris Gare de Lyon",
+      "departure": "2026-11-14T12:46:00+01:00",
+      "arrival": "2026-11-14T15:51:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.850Z"
+    },
+    {
+      "id": "2026-11-15_paris-marseille_6117_1538",
+      "date": "2026-11-15",
+      "direction": "paris-marseille",
+      "operator": "TGV INOUI",
+      "train_number": "6117",
+      "origin": "Paris Gare de Lyon",
+      "destination": "Marseille Saint-Charles",
+      "departure": "2026-11-15T15:38:00+01:00",
+      "arrival": "2026-11-15T18:56:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.850Z"
+    },
+    {
+      "id": "2026-11-15_marseille-paris_6134_2003",
+      "date": "2026-11-15",
+      "direction": "marseille-paris",
+      "operator": "TGV INOUI",
+      "train_number": "6134",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Paris Gare de Lyon",
+      "departure": "2026-11-15T20:03:00+01:00",
+      "arrival": "2026-11-15T23:22:00+01:00",
+      "autonomous_wheelchair_access": true,
+      "amenities": [
+        "WiFi on the train",
+        "Bar",
+        "Nursery area",
+        "Disabled passenger access",
+        "Accessible toilet with turning space",
+        "Onboard information display",
+        "Autonomous access for wheelchair users"
+      ],
+      "source_url": "https://www.sncf-connect.com/en-en/home/shop/results/outward",
+      "observed_at": "2026-11-06T11:56:07.850Z"
+    }
+  ]
+}

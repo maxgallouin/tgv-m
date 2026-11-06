@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horaires du TGV M entre {{ page.title | replace: ' → ', ' et ' | escape }}</title>
+  <meta name="description" content="Retrouvez les horaires du nouveau TGV M entre {{ page.title | replace: ' → ', ' et ' | escape }} et consultez les prochains départs.">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <script src="{{ '/assets/app.js' | relative_url }}" defer></script>
+</head>
+<body>
+  {% assign data = site.data.journeys %}
+  {% assign journeys = data.journeys | where: 'direction', page.direction %}
+  {% assign coverage = data.coverage | where: 'direction', page.direction %}
+  {% assign dates = coverage | map: 'date' | uniq | sort %}
+  <header class="topbar"><a class="brand" href="{{ '/' | relative_url }}" aria-label="Accueil TGV M"><span class="brand-mark">TGV M</span><span class="brand-label">LE NOUVEAU TGV DE LA SNCF</span></a></header>
+  <main>
+    <section class="hero">
+      <a class="back-link" href="{{ '/' | relative_url }}">← Toutes les lignes</a>
+      <p class="last-updated">{% include last-updated.html %}</p>
+      <h1>Horaires du TGV M entre {{ page.title | replace: ' → ', ' et ' | escape }}<span class="title-dot">.</span></h1>
+      <p class="intro"><span class="route-status active">En service</span></p>
+    </section>
+    <section class="results" aria-labelledby="results-heading">
+      <h2 id="results-heading" class="sr-only">Tableau des départs TGV-M</h2>
+      <div class="filters" id="filters" hidden>
+        <fieldset><legend>Date</legend><div class="date-buttons"><button type="button" data-date="all" aria-pressed="true">Tout voir</button>{% for date in dates %}<button type="button" data-date="{{ date }}" aria-pressed="false"><small>{% include date-fr.html date=date format='weekday-short' %}</small> {% include date-fr.html date=date format='short' %}</button>{% endfor %}</div></fieldset>
+      </div>
+      <div class="result-meta"><p id="result-count" role="status" aria-live="polite">{{ journeys.size }} départ{% if journeys.size != 1 %}s{% endif %}</p><span class="snapshot">Heure française</span></div>
+      <div id="journeys">
+      {% for date in dates %}
+        {% assign daily = journeys | where: 'date', date | sort: 'departure' %}
+        {% assign daycoverage = coverage | where: 'date', date %}
+        <section class="day-group" data-day="{{ date }}" aria-label="{% include date-fr.html date=date format='full' %}">
+          <h3><span>{% include date-fr.html date=date format='weekday' %}</span> {% include date-fr.html date=date format='day-month' %} <small>{{ date | date: '%Y' }}</small></h3>
+          <div class="table-wrap"{% if daily.size == 0 %} hidden{% endif %}><table>
+            <caption class="sr-only">Départs du {% include date-fr.html date=date format='full' %}</caption>
+            <thead><tr><th scope="col">Train</th><th scope="col">Trajet</th><th scope="col">Départ</th><th scope="col">Arrivée</th><th scope="col" class="booking-column">Réserver</th></tr></thead>
+            <tbody>
+            {% for journey in daily %}
+            <tr data-direction="{{ journey.direction }}" data-match="true">
+              <td class="train"><strong>{{ journey.train_number }}</strong><span>TGV INOUI</span></td>
+              <td class="route-cell"><span>{% if journey.direction == 'paris-marseille' %}Paris <i aria-hidden="true">→</i> Marseille{% else %}Marseille <i aria-hidden="true">→</i> Paris{% endif %}</span></td>
+              <td class="departure"><time datetime="{{ journey.departure }}">{{ journey.departure | slice: 11, 5 }}</time></td>
+              <td class="arrival"><time datetime="{{ journey.arrival }}">{{ journey.arrival | slice: 11, 5 }}</time></td>
+              <td class="booking-column"><a class="booking-button" href="https://www.sncf-connect.com/" target="_blank" rel="noopener noreferrer">Réserver</a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+          </table></div>
+          {% for scope in daycoverage %}
+            {% assign direction_matches = daily | where: 'direction', scope.direction %}
+            {% if direction_matches.size == 0 %}
+            <div class="empty-card" data-direction="{{ scope.direction }}"><span aria-hidden="true">—</span><div><strong>{% if scope.direction == 'paris-marseille' %}Paris → Marseille{% else %}Marseille → Paris{% endif %}</strong><p>{% if scope.complete %}Aucun départ disponible pour cette date.{% else %}Cette recherche est incomplète. Des départs peuvent manquer.{% endif %}</p></div></div>
+            {% endif %}
+          {% endfor %}
+        </section>
+      {% endfor %}
+      </div>
+    </section>
+  </main>
+  <footer><a href="{{ '/mentions-legales/' | relative_url }}">Mentions légales</a></footer>
+</body>
+</html>

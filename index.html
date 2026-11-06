@@ -1,0 +1,39 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horaires du nouveau TGV M par ligne</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">TGV M</span><span class="brand-label">LE NOUVEAU TGV DE LA SNCF</span></a></header>
+<main>
+<section class="hero"><h1>Lignes et horaires du TGV M<span class="title-dot">.</span></h1><p class="intro">Choisissez votre trajet pour retrouver les prochains départs.</p></section>
+{% assign dates = site.data.journeys.coverage | map: 'date' | uniq | sort %}
+<nav class="line-list" aria-label="Lignes TGV-M">
+{% for route in site.data.routes %}
+{% assign direction = route.url | remove: '/' %}
+{% assign route_journeys = site.data.journeys.journeys | where: 'direction', direction %}
+{% assign max_trips = 0 %}
+{% for date in dates %}
+  {% assign daily_count = route_journeys | where: 'date', date | size %}
+  {% if daily_count > max_trips %}{% assign max_trips = daily_count %}{% endif %}
+{% endfor %}
+<a class="line-card" href="{{ route.url | relative_url }}">
+  <span class="line-name">{{ route.origin }} <span aria-hidden="true">→</span> {{ route.destination }}</span>
+  <span class="route-status {% if route.active %}active{% else %}announced{% endif %}">{% if route.active %}En service{% else %}Mise en service annoncée{% endif %}</span>
+  <span class="line-frequency">{% if route.active %}Jusqu’à {{ max_trips }} trajet{% if max_trips != 1 %}s{% endif %} / jour{% endif %}</span>
+  <span class="schedule-button">Voir les horaires <span aria-hidden="true">→</span></span>
+</a>
+{% endfor %}
+</nav>
+<p class="frequency-note">{% include last-updated.html %}</p>
+</main>
+<footer><a href="{{ '/mentions-legales/' | relative_url }}">Mentions légales</a></footer>
+</body>
+</html>

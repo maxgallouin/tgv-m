@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Horaires du TGV M entre {{ page.title | replace: ' → ', ' et ' | escape }}</title><meta name="description" content="Retrouvez les horaires du nouveau TGV M entre {{ page.title | replace: ' → ', ' et ' | escape }} et consultez les prochains départs."><link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"></head>
+<body>
+<header class="topbar"><a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">TGV M</span><span class="brand-label">LE NOUVEAU TGV DE LA SNCF</span></a></header>
+<main><section class="hero"><a class="back-link" href="{{ '/' | relative_url }}">← Toutes les lignes</a><p class="route-label">TGV - M</p><h1>Horaires du TGV M entre {{ page.title | replace: ' → ', ' et ' | escape }}<span class="title-dot">.</span></h1><span class="route-status announced">Mise en service annoncée</span></section><section class="announcement"><h2>Prochains départs</h2><p>Les horaires seront affichés ici dès qu’ils seront disponibles.</p></section></main>
+<footer><a href="{{ '/mentions-legales/' | relative_url }}">Mentions légales</a>{% include last-updated.html %}</footer>
+</body>
+</html>

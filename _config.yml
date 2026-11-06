@@ -1,0 +1,7 @@
+title: Horaires du nouveau TGV M par ligne
+description: Consultez les horaires du nouveau TGV M par ligne et découvrez les prochains départs.
+lang: fr
+timezone: Europe/Paris
+url: ""
+baseurl: ""
+exclude: [Gemfile, Gemfile.lock, README.md, scripts, vendor]

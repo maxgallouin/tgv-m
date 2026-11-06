@@ -1,0 +1,16 @@
+- origin: Paris
+  destination: Marseille
+  url: /paris-marseille/
+  active: true
+- origin: Marseille
+  destination: Paris
+  url: /marseille-paris/
+  active: true
+- origin: Paris
+  destination: Nice
+  url: /paris-nice/
+  active: false
+- origin: Nice
+  destination: Paris
+  url: /nice-paris/
+  active: false

@@ -1,0 +1,17 @@
+{%- assign weekday = include.date | date: '%w' | plus: 0 -%}
+{%- assign month = include.date | date: '%m' | minus: 1 -%}
+{%- assign day = include.date | date: '%-d' -%}
+{%- case include.format -%}
+{%- when 'weekday-short' -%}
+{{- site.data.fr.weekdays_short[weekday] -}}
+{%- when 'weekday' -%}
+{{- site.data.fr.weekdays[weekday] | capitalize -}}
+{%- when 'short' -%}
+{{- day }} {{ site.data.fr.months_short[month] -}}
+{%- when 'day-month' -%}
+{{- day }} {{ site.data.fr.months[month] -}}
+{%- when 'full' -%}
+{{- site.data.fr.weekdays[weekday] | capitalize }} {{ day }} {{ site.data.fr.months[month] }} {{ include.date | date: '%Y' -}}
+{%- else -%}
+{{- day }} {{ site.data.fr.months[month] }} {{ include.date | date: '%Y' -}}
+{%- endcase -%}
